@@ -82,8 +82,9 @@ function calcularValorCalculo() {
 <p>Intervalo Esfera (horas): ${intervaloEsfera.toFixed(0)}</p>
 <p>Intervalo Cilindricos (horas): ${intervaloCilindricos.toFixed(0)}</p>
 <p>Intervalo Radial Esferas (horas): ${intervaloRadialEsferas.toFixed(0)}</p>
-<p  style=" font-size: 25px; color: black; background-color: green"><br>Graxa Recomendada: ${graxaRecomendada}</p>
-<p style="font-size: 23px; color: red;"><br>*Intervalos devem ser corrigidos conforme temperatura de trabalho e possíveis contaminações.* *Solicitar informação com nosso departamento técnico.*</p>
+<p style="font-size: 25px; background-color: #00FF00; color: black;"><br>Graxa Recomendada: ${graxaRecomendada}</p>
+<p style="font-size: 20px; background-color: red; color: white;"><br>*Intervalos devem ser corrigidos conforme temperatura de trabalho e possíveis contaminações. Solicitar informações com nosso departamento técnico.*</p>
+
 
 <img src="./assets/umparceirolocal.png" alt="Sua Imagem" class="imagem-resultado">
 <br/>
