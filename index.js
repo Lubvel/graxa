@@ -15,6 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Pré-carregar as imagens
+const imagens = [
+    "./assets/Logo.png",
+    "./assets/umparceirolocal.png"
+];
+
+function preCarregarImagens() {
+    for (let i = 0; i < imagens.length; i++) {
+        const img = new Image();
+        img.src = imagens[i];
+    }
+}
+
+document.addEventListener("DOMContentLoaded", preCarregarImagens);
+
+
     const botaoGerarRelatorio = document.getElementById("gerar-relatorio");
 
     botaoGerarRelatorio.addEventListener("click", function() {
