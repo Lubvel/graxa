@@ -78,7 +78,7 @@ function calcularValorCalculo() {
         <p>Intervalo Cilindricos (horas): ${intervaloCilindricos.toFixed(0)}</p>
         <p>Intervalo Radial Esferas (horas): ${intervaloRadialEsferas.toFixed(0)}</p>
         <p style="font-size: 25px; background-color: #00FF00; color: black;"><br>Graxa Recomendada: ${graxaRecomendada}</p>
-        <p style="font-size: 20px; background-color: red; color: white;"><br>*Intervalos devem ser corrigidos conforme temperatura de trabalho e possíveis contaminações. Solicitar informações com nosso departamento técnico.*</p>
+        <button id="imprimirRelatorio" style="background-color: #3498DB; color: #fff; padding: 15px 25px; border: none; border-radius: 4px; cursor: pointer; width: 100%;" onclick="window.print()">Imprimir</button>
         <img src="./assets/umparceirolocal.png" alt="Sua Imagem" class="imagem-resultado">
         <br/>
         <button id="imprimirRelatorio" style="background-color: #3498DB; color: #fff; padding: 15px 25px; border: none; border-radius: 4px; cursor: pointer; width: 100%;" onclick="window.print()">Imprimir</button>
