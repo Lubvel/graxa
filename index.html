@@ -26,42 +26,42 @@
                         <input type="text" class="form-control" id="nomeCliente" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="nomeEquipamento">Nome do equipamento:</label>
                         <input type="text" class="form-control" id="nomeEquipamento" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="tipoRolamento">Tipo de rolamento:</label>
                         <input type="text" class="form-control" id="tipoRolamento" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="rpm">RPM (Rotações Por Minuto):</label>
                         <input type="number" class="form-control" id="rpm" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="temperatura">Temperatura (em Celsius):</label>
                         <input type="number" class="form-control" id="temperatura" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="dExterno">D.Externo (D) (mm):</label>
                         <input type="number" class="form-control" id="dExterno" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="dInterno">D.Interno (d) (mm):</label>
                         <input type="number" class="form-control" id="dInterno" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="largura">Largura (B) (mm):</label>
                         <input type="number" class="form-control" id="largura" required />
                     </div>
 
-                    <div class="form-group col-sm-12"">
+                    <div class="form-group col-sm-12">
                         <label for="useGraxa">Use 0,002 p/ W33 ou 0,005 p/ demais:</label>
                         <select id="useGraxa" class="form-control" required>
                             <option value="0"></option>
@@ -70,23 +70,23 @@
                         </select>
                     </div>
 
-                    <input type="button" class="btn btn-primary" value="Calcular" onclick="calcularValorCalculo()" />
+                    <input type="button" class="btn btn-primary" id="botao-calcular" value="Calcular" onclick="calcularValorCalculo()" />
                 </form>
             </div>
+            
             <div class="col-sm-6 result-container order-sm-2" id="resultados">
-                <img src="./assets/Logo.png" alt="Logo" class="img-fluid" style="display: none;" />
-                <img src="./assets/umparceirolocal.png" alt="Parceiro Local" class="img-fluid" style="display: none;" />
-</div>
-                
+
+             
             </div>
+            <a href="https://api.whatsapp.com/send?phone=554599712081&text=Ol%C3%A1%2C%20vim%20pelo%20c%C3%A1lculo%20de%20DMN%20aqui" target="_blank">
+                <img src="./assets/10000403-removebg-preview.png" alt="WhatsApp" id="whats" class="whatsapp-icon img-fluid" />
+            </a>
         </div>
     </div>
 
     <script src="index.js"></script>
 
-    <div class="no-print">
-    
-    
+    <div class="no-print"></div>
 </body>
 
 </html>
