@@ -33,8 +33,46 @@
 
                     <div class="form-group col-sm-12">
                         <label for="tipoRolamento">Tipo de rolamento:</label>
-                        <input type="text" class="form-control" id="tipoRolamento" required />
+                        <select id="tipoRolamento" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="1215K">1215K</option>
+                            <!-- Adicione mais opções conforme necessário -->
+                            <option value="22311 E/VA405">22311 E/VA405</option>
+                            <option value="22311 EK/VA405">22311 EK/VA405</option>
+                            <option value="22312 E/VA405">22312 E/VA405</option>
+                            <option value="22312 EK/VA405">22312 EK/VA405</option>
+                            <option value="22313 E/VA405">22313 E/VA405</option>
+                            <option value="22313 EK/VA405">22313 EK/VA405</option>
+                            <option value="22314 E/VA405">22314 E/VA405</option>
+                            <option value="22314 EK/VA405">22314 EK/VA405</option>
+                            <option value="22315 EJA/VA405">22315 EJA/VA405</option>
+                            <option value="22315 EKJA/VA405">22315 EKJA/VA405</option>
+                            <option value="22316 EJA/VA405">22316 EJA/VA405</option>
+                            <option value="22316 EKJA/VA405">22316 EKJA/VA405</option>
+                            <option value="22317 EJA/VA405">22317 EJA/VA405</option>
+                            <option value="22317 EKJA/VA405">22317 EKJA/VA405</option>
+                            <option value="22317 EJA/VA406">22317 EJA/VA406</option>
+                            <option value="22318 EJA/VA405">22318 EJA/VA405</option>
+                            <option value="22318 EKJA/VA405">22318 EKJA/VA405</option>
+                            <option value="22319 EJA/VA405">22319 EJA/VA405</option>
+                            <option value="22319 EKJA/VA405">22319 EKJA/VA405</option>
+                            <option value="22320 EJA/VA405">22320 EJA/VA405</option>
+                            <option value="22320 EKJA/VA405">22320 EKJA/VA405</option>
+                            <option value="22320 EJA/VA406">22320 EJA/VA406</option>
+                            <option value="22322 EJA/VA405">22322 EJA/VA405</option>
+                            <option value="22322 EJA/VA406">22322 EJA/VA406</option>
+                            <option value="22324 CCJA/W33VA405">22324 CCJA/W33VA405</option>
+                            <option value="22324 CCKJA/W33VA405">22324 CCKJA/W33VA405</option>
+                            <option value="22324 CCJA/W33VA406">22324 CCJA/W33VA406</option>
+                            <option value="22326 CCJA/W33VA405">22326 CCJA/W33VA405</option>
+                            <option value="22326 CCKJA/W33VA405">22326 CCKJA/W33VA405</option>
+                            <option value="22326 CCJA/W33VA406">22326 CCJA/W33VA406</option>
+                            <option value="22328 CCJA/W33VA405">22328 CCJA/W33VA405</option>
+                            <option value="22328 CCKJA/W33VA405">22328 CCKJA/W33VA405</option>
+                            <option value="22328 CCJA/W33VA406">22328 CCJA/W33VA406</option>
+                        </select>
                     </div>
+                    
 
                     <div class="form-group col-sm-12">
                         <label for="rpm">RPM (Rotações Por Minuto):</label>
@@ -75,8 +113,9 @@
             </div>
             
             <div class="col-sm-6 result-container order-sm-2" id="resultados">
-
-             
+                <div id="rolamentoContainer" class="rolamento-container">
+                
+                </div>
             </div>
             <a href="https://api.whatsapp.com/send?phone=554599712081&text=Ol%C3%A1%2C%20vim%20pelo%20c%C3%A1lculo%20de%20DMN%20aqui" target="_blank">
                 <img src="./assets/10000403-removebg-preview.png" alt="WhatsApp" id="whats" class="whatsapp-icon img-fluid" />
@@ -85,6 +124,7 @@
     </div>
 
     <script src="index.js"></script>
+
 
     <div class="no-print"></div>
 </body>
