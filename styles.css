@@ -184,7 +184,7 @@ input[type="number"] {
     color: #333;
     background-color: transparent;
     text-align: center; /* Adicionado para centralizar o texto */
-    top: -300px;
+    top: -140px;
     position: relative;
 }
 
@@ -292,7 +292,7 @@ input[type="number"] {
 /* Estilo para o ícone do WhatsApp na primeira parte da tela */
 .whatsapp-icon {
     position: absolute;
-    top: 1000px; /* Alterado para top para posicionar no canto superior */
+    top: 1170px; /* Alterado para top para posicionar no canto superior */
     right: 1250px; /* Alterado para right para posicionar no canto superior direito */
     width: 70px; /* Ajuste o tamanho conforme necessário */
     height: 70px; /* Ajuste o tamanho conforme necessário */
@@ -301,7 +301,7 @@ input[type="number"] {
 @media  (max-width: 480px){
     .whatsapp-icon{
        right: 300px;
-       top: 950px;
+       top: 1100px;
     }
 }
 @media  (min-width: 1920px){
@@ -311,6 +311,8 @@ input[type="number"] {
        
     }
 }
+
+
 
 /* Garante que o ícone do WhatsApp permaneça visível, mesmo quando outras partes da tela mudarem */
 body {
