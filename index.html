@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Lubvel Lubrificantes - Distribuidora Autorizada da Total Lubrificantes</title>
-    <link rel="icon" href="assets\q82_-pJbLF7-SGUPNqtOfE0F7htymWrn (1).jpg" sizes="32x32" type="image/png"></head>
+    <link rel="icon" href="assets\q82_-pJbLF7-SGUPNqtOfE0F7htymWrn (1).jpg" type="image/png">
+</head>
 
 <body>
     <div class="desenvolvido">
@@ -26,6 +27,7 @@
                         <input type="text" class="form-control" id="nomeCliente" required />
                     </div>
 
+
                     <div class="form-group col-sm-12">
                         <label for="nomeEquipamento">Nome do equipamento:</label>
                         <input type="text" class="form-control" id="nomeEquipamento" required />
@@ -33,7 +35,8 @@
 
                     <div class="form-group col-sm-12">
                         <label for="tipoRolamento">Tipo de rolamento:</label>
-                        <select id="tipoRolamento" class="form-control" required>
+
+                        <select id="tipoRolamento" class="form-control" size="5">
                             <option value="">Selecione...</option>
                             <option value="1215K">1215K</option>
                             <!-- Adicione mais opções conforme necessário -->
@@ -73,7 +76,13 @@
                         </select>
                     </div>
                     
+                    <!-- Campo de pesquisa -->
+                    <div class="form-group col-sm-12">
+                        <label for="searchInput">Pesquisar rolamento:</label>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Digite para pesquisar..." onkeyup="searchFunction()">
+                    </div>
 
+                    
                     <div class="form-group col-sm-12">
                         <label for="rpm">RPM (Rotações Por Minuto):</label>
                         <input type="number" class="form-control" id="rpm" required />
