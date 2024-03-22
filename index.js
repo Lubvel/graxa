@@ -2,10 +2,10 @@ const form = document.getElementById("registroForm");
 const inputs = form.querySelectorAll("input");
 const calcularButton = document.getElementById("botao-calcular");
 const tipoRolamentoInput = document.getElementById("tipoRolamento");
-const options = tipoRolamentoInput.getElementsByTagName("option");
 const dExternoInput = document.getElementById("dExterno");
 const dInternoInput = document.getElementById("dInterno");
 const larguraInput = document.getElementById("largura");
+const opcoesCorrespondentes = document.getElementById("opcoesCorrespondentes");
 
 form.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
@@ -24,7 +24,6 @@ form.addEventListener("keyup", function (event) {
         limparMedidasAutomaticas(input);
     });
 });
-
 
 tipoRolamentoInput.addEventListener("change", function() {
     const tipoRolamento = tipoRolamentoInput.value;
@@ -135,7 +134,6 @@ function preencherMedidasAutomaticamente(tipoRolamento) {
         case "22328 CCJA/W33VA406":
             preencherMedidas(430, 225, 84);
             break;
-        // Adicionar mais casos conforme necessário
         default:
             // Limpa os campos se o tipo de rolamento não tiver sido definido
             limparMedidas();
@@ -155,7 +153,20 @@ function preencherMedidasAutomaticamente(tipoRolamento) {
         larguraInput.value = "";
     }
 
-
+    function searchFunction() {
+        var input, filter, select, option, i;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        select = document.getElementById("tipoRolamento");
+        option = select.getElementsByTagName("option");
+        for (i = 0; i < option.length; i++) {
+            if (option[i].textContent.toUpperCase().indexOf(filter) > -1) {
+                option[i].style.display = "";
+            } else {
+                option[i].style.display = "none";
+            }
+        }
+    }
 
 function calcularValorCalculo() {
     const nomeCliente = document.getElementById("nomeCliente").value;
